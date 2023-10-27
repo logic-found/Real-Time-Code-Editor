@@ -7,7 +7,7 @@ const path = require('path');
 const app = express()
 const server = createServer(app)
 const io = new Server(server)
-const PORT = process.env.port || 5000
+const PORT = process.env.REACT_APP_BACKEND_URL || 5000
 let clients = {}
 
 app.use(express.static('build'));
