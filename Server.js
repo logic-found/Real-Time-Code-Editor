@@ -17,7 +17,7 @@ app.use((req, res, next) => {
         root : path.join(__dirname)
     }
 });
-server.listen(PORT, () => console.log(`server listening on port ${PORT}`))
+//server.listen(PORT, () => console.log(`server listening on port ${PORT}`))
 
 io.on('connection', (socket) => {
     
