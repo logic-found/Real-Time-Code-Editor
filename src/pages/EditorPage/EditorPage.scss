@@ -1,0 +1,98 @@
+.mainWrap{
+    width: 100vw;
+    display: flex;
+    color:#fff;
+    display: flex;
+    box-sizing: border-box;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: hidden;
+    }  
+
+    .aside{
+        width: 22vw;
+        background-color: var(--darker);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        
+        //align-content: space-between;
+
+        @media (max-width: 800px) {
+            width: 27vw;
+        }
+        @media (max-width: 600px) {
+            width: 100vw;
+            height: fit-content;
+        }
+
+
+        .asideInner{
+            height: fit-content;
+            
+
+            .logo{
+                border-bottom: 1px solid #424242;
+                padding-bottom: 10px;
+            
+                .logoImage{
+                    height: 60px;
+
+                    @media (max-width: 800px) {
+                        height: 45px;
+                    }
+                    @media (max-width: 650px) {
+                        height: 40px;
+                    }
+                }
+            }
+            .connected{
+                margin: 20px 0;
+            }
+
+            .clientList{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .btn-div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10px;
+            //padding: 5px;
+            box-sizing: border-box;
+
+            .copyBtn{
+                margin-bottom: 10px;
+                background-color: var(--green);
+                color:var(--darker);
+
+                &:hover{
+                    background-color: var(--dark-green);
+                }
+            }
+        }
+    }
+    .editorWrap{
+        min-height: 100vh;
+        width: 78vw;
+        background-color: var(--dark);
+        box-sizing: border-box;
+
+
+        @media (max-width: 800px) {
+            width: 73vw;
+        }
+        @media (max-width: 600px) {
+            width: 100vw;
+            min-height: 80vh;
+        }
+        
+    }
+}

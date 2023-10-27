@@ -1,0 +1,14 @@
+.CodeMirror {
+    min-height: 100vh;
+    font-size: 18px;
+    line-height: 1.4;
+    padding-top: 5px;
+    overflow-wrap: break-word;
+    //white-space: pre-wrap
+
+} 
+
+textarea{
+    background-color: var(--dark);
+    border: none;
+}

@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --darker : #1c1e29;
+  --dark: #282a36;
+  --green : #4aee88;
+  --off-white : #eee;
+  --dark-green : #2b824c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darker);
+  overflow-x: hidden;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* width */
+/* ::-webkit-scrollbar {
+  width: 4px;
+  height: 50px;
+  border-radius: 6px;
+  background: #575C66;
+} */
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background:#222A35;
+} */
+
+/* Handle */
+
+
+
