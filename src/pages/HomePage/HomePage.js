@@ -3,7 +3,6 @@ import "./HomePage.scss";
 import { v4 as uuid } from "uuid";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import { join } from "lodash";
 
 export default function HomePage() {
   const navigate = useNavigate();
