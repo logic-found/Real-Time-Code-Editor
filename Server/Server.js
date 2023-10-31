@@ -1,7 +1,7 @@
 const express = require('express')
 const {createServer} = require('http')
 const {Server} = require('socket.io')
-const ACTIONS = require('./src/Action')
+const ACTIONS = require('../src/Action')
 const path = require('path');
 
 const app = express()
@@ -10,13 +10,13 @@ const io = new Server(server)
 const PORT = process.env.PORT || 5000
 
 let clients = {}
+//app.use(express.static(path.join(__dirname, '../build')));
+//app.use(express.static('build'));
 
-app.use(express.static('build'));
-app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    const options = {
-        root : path.join(__dirname)
-    }
+console.log(__dirname)
+app.use(express.static(path.join(__dirname, '../build')));
+app.use((req, res) => {
+    res.sendFile(path.join(__dirname,'../build', 'index.html'));
 });
 server.listen(PORT, () => {
     console.log(`server listening on port ${PORT}`)
