@@ -44,9 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/codemirror": "^5.60.12",
-    "nodemon": "^3.0.1"
   }
 }

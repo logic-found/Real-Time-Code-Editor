@@ -2,21 +2,13 @@ const express = require('express')
 const {createServer} = require('http')
 const {Server} = require('socket.io')
 const ACTIONS = require('./Action')
-const path = require('path');
 
 const app = express()
 const server = createServer(app)
 const io = new Server(server)
 const PORT = process.env.PORT || 8000
-
 let clients = {}
-//app.use(express.static(path.join(__dirname, '../build')));
-//app.use(express.static('build'));
 
-// app.use(express.static(path.join(__dirname, 'build')));
-// app.use((req, res) => {
-//     res.sendFile(path.join(__dirname,'build', 'index.html'));
-// });
 
 
 
