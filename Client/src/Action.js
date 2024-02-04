@@ -9,5 +9,4 @@ const ACTIONS = {
     CONNECT_FAILED : 'connect_failed'
 }
 
-//export default ACTIONS 
-module.exports = ACTIONS
+export default ACTIONS 

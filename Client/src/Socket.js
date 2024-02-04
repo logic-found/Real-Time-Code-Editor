@@ -1,4 +1,3 @@
-import React from 'react'
 import {io} from 'socket.io-client'
 
 
@@ -9,5 +8,6 @@ export const initSocket = async () => {
         timeout : 10000,
         transports : ['websocket']
     }
+    console.log('opening connection')
     return io(process.env.REACT_APP_BACKEND_URL, options)
 }
