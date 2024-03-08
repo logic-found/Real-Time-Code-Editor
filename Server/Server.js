@@ -1,12 +1,27 @@
 const express = require('express')
 const {createServer} = require('http')
 const {Server} = require('socket.io')
+const cors = require('cors')
 const ACTIONS = require('./Action')
+const dotenv = require('dotenv')
+dotenv.config()
+const PORT = process.env.PORT || 8000
+
 
 const app = express()
 const server = createServer(app)
-const io = new Server(server)
-const PORT = process.env.PORT || 8000
+const io = new Server(server, {
+    cors : {
+        origin : process.env.CLIENT_URL,
+        credentials: true,
+    }
+})
+app.use(cors({
+    origin : process.env.CLIENT_URL,
+    credentials: true,
+}))
+app.use(express.json())
+
 let clients = {}
 
 
